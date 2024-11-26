@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JRui</title>
+    <link rel="icon" href="/images/Logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="profile.css">
+    <link rel="stylesheet" href="level.css">
+    <link rel="stylesheet" href="skills.css">
+    <link rel="stylesheet" href="experience.css">
+    <link rel="stylesheet" href="contact.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <script defer src="/index.js"></script>
+    <script defer src="/index2.js"></script>
+</head>
+
+<body>
+    <header class="topheader">
+        <nav class="topnav">
+            <a href="#" class="logo">
+                <img height="80" width="80" src="/images/Logo.png" alt="Logo de mi página">
+                <div>JRui</div>
+            </a>
+            <button class="open-menu" aria-label="Abrir menú">
+                <img src="/images/Icon/hamburger-icon.svg" alt="abrir menú">
+            </button>
+
+            <ul class="menu">
+                <button class="close-menu" aria-label="Cerrar menú">
+                    <img src="/images/Icon/close-icon.svg" alt="cerrar menú">
+                </button>
+                <li><a href="#profile" class="selected">PERFIL</a></li>
+                <li><a href="#formacion">FORMACIÓN</a></li>
+                <li><a href="#skills">HABILIDADES</a></li>
+                <li><a href="#experience">EXPERIENCIA</a></li>
+                <li><a href="#contact">CONTACTO</a></li>
+
+            </ul>
+        </nav>
+    </header>
+    <div class="padding-horizontal padding-vertical">
+        <section class="profile" id="profile">
+            <span class="profile-img-section">
+                <img src="/images/Tiranosaurio.png" class="profile-img" alt="Imagen del desarrollador">
+            </span>
+            <div class="profile-info">
+                <h1 class="profile-title">Hello World!</h1>
+                <p class="profile-details">Soy Javi, un programador junior que empieza a manejarse bien con JavaScript,
+                    Python y PHP, lo que me
+                    permite
+                    abordar proyectos tanto del lado del cliente como del servidor de manera eficiente.</p>
+                <button class="profile-btn"
+                    >Descarga mi CV</button>
+
+            </div>
+
+        </section>
+    </div>
+
+    <section class="formacion" id="formacion">
+        <img src="/images/waves/upwave.svg" alt="imagen de curva estetica" class="upwaveExperience">
+        <div class="containerFormacion">
+            <h2 class="formacionTitle">FORMACIÓN</h2>
+            <div class="acordeon">
+                <div class="select bloque bloque1 activo">
+                    <h2 class="h2">HTML</h2>
+                    <span class="plus"><img src="/images/Icon/plus-circle.svg" alt=""></span>
+                    <div class="contenido">
+                        <img class="logoBloque" src="/images/logoHTML.png" alt="logo de HTML">
+                        <p class="descripcion">Cursos: <br> IFCD031PO Desarrollo de servicios web <br> IFCD0038 Diseño
+                            de páginas web.</p>
+                    </div>
+                </div>
+                <div class="select bloque bloque2">
+                    <h2 class="h2">CSS</h2>
+                    <span class="plus"><img src="/images/Icon/plus-circle.svg" alt=""></span>
+                    <div class="contenido">
+                        <img class="logoBloque" src="/images/logoCSS.png" alt="logo de CSS">
+                        <p class="descripcion">Cursos: <br> IFCD031PO Desarrollo de servicios web <br> IFCD0038 Diseño
+                            de páginas web.</p>
+                    </div>
+                </div>
+                <div class="select bloque bloque3">
+                    <h2 class="h2">jScript</h2>
+                    <span class="plus"><img src="/images/Icon/plus-circle.svg" alt=""></span>
+                    <div class="contenido">
+                        <img class="logoBloque" src="/images/logoJscript.png" alt="logo de JavaScript">
+                        <p class="descripcion">Cursos: <br> <b>CERTIFICADO PROFESIONAL</b> NVX DE NO SE DONDE
+                            <br>IFCD031PO Desarrollo de servicios web.</p>
+                    </div>
+                </div>
+                <div class="select bloque bloque4">
+                    <h2 class="h2">Phyton</h2>
+                    <span class="plus"><img src="/images/Icon/plus-circle.svg" alt=""></span>
+                    <div class="contenido">
+                        <img class="logoBloque" src="/images/logoPhyton.png" alt="logo de Phyton">
+                        <p class="descripcion">Cursos: <br>Phyton Institute // Cisco Networking Academy <b>PCEP -
+                                CERTIFIED ENTRY-LEVEL PYTHON PROGRAMMER.</b></p>
+                    </div>
+                </div>
+                <div class="select bloque bloque5">
+                    <h2 class="h2">PHP</h2>
+                    <span class="plus"><img src="/images/Icon/plus-circle.svg" alt=""></span>
+                    <div class="contenido">
+                        <img class="logoBloque" src="/images/logoPHP.png" alt="logo de PHP">
+                        <p class="descripcion">Cursos: <br><b>PHP Web Apps Developer</b> PHP&MySQL: Coursera // By
+                            University of Michigan.</p>
+                    </div>
+                </div>
+                <div class="select bloque bloque6">
+                    <h2 class="h2">IA</h2>
+                    <span class="plus"><img src="/images/Icon/plus-circle.svg" alt=""></span>
+                    <div class="contenido">
+                        <img class="logoBloque" src="/images/logoOpenAI.png" alt="logo de OpenAI">
+                        <p class="descripcion">Cursos: <br> IFCD0063 Aplicaciones industriales del aprendizaje
+                            automático y la <b> inteligencia artificial.</b></p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <img src="/images/waves/downwave.svg" alt="imagen de curva estetica" class="downwaveExperience">
+    </section>
+
+    <section class="skills" id="skills">
+        <h2 class="skills-title">HABILIDADES</h2>
+        <ul class="skills-list">
+            <li class="skills-skill">Lenguajes de programación</li>
+            <li class="skills-skill">Software de plataformas cruzadas</li>
+            <li class="skills-skill">Actualización continua</li>
+            <li class="skills-skill">Lógica algorítmica</li>
+            <li class="skills-skill softSkillOne">Habilidades blandas</li>
+            <li class="skills-skill softSkill">Toma de decisiones</li>
+            <li class="skills-skill softSkill">Análisis de datos</li>
+            <li class="skills-skill softSkill">Resiliencia</li>
+            <li class="skills-skill softSkill">Pensamiento analítico</li>
+            <li class="skills-skill softSkill">Curiosidad</li>
+            <li class="skills-skill softSkill">Empatía</li>
+            <li class="skills-skill softSkill">Ingenio</li>
+            <li class="skills-skill softSkill">Trabajo en equipo</li>
+        </ul>
+    </section>
+
+    <section class="experiences" id="experience">
+        <img src="/images/waves/upwave.svg" alt="imagen de curva estetica" class="upwaveExperience">
+        <div class="mapExperiences">
+            <h2 class="experiencesTitle">EXPERIENCIA</h2>
+            <div class="experiencesGrid">
+                <div class="empty"> <img src="/images/Ikea.png" height="280px" alt="logo de Ikea"></div>
+                <div class="lineaGrid"></div>
+                <div class="experienceDiv">
+                    <div class="experienceDate">2020-2024</div>
+                    <div class="experienceCompany">IKEA IBERICA</div>
+                    <div class="experiencePosition">Home Fursnising Business Manager</div>
+                    <div class="experienceDescription">Desarrollo del negocio. Visión Estratégica. Posicionamiento de
+                        Marca. Lider de equipos. People Developer & Right People in right place. <br><br>Responsable de
+                        más de treinta personas. Manejo de un negocio >10 M€</div>
+                </div>
+                <div class="experienceDiv experienceDiv_left">
+                    <div class="experienceDate">2014-2020</div>
+                    <div class="experienceCompany">IKEA IBERICA</div>
+                    <div class="experiencePosition">Forniture&Accesories> SPECIALIST SELLER</div>
+                    <div class="experienceDescription">Detección de potenciales de ventas. Visión Estratégica.
+                        Posicionamiento de
+                        Marca. Right Item in right place. Teamleader <br><br>Responsable de mas de 300 puntos de venta
+                        impulsiva. Experto en calendario comercial </div>
+                </div>
+                <div class="lineaGrid"></div>
+                <div class="empty"> <img src="/images/Ikea.png" height="280px" alt="logo de Ikea"></div>
+                <div class="empty"> <img src="/images/Decathlon.png" height="280px" alt="logo de Decathlon"></div>
+                <div class="lineaGrid"></div>
+                <div class="experienceDiv">
+                    <div class="experienceDate">dic 2013 - mar2014</div>
+                    <div class="experienceCompany">DECATHLON ESPAÑA</div>
+                    <div class="experiencePosition">Sport Section Manager</div>
+                    <div class="experienceDescription">Desarrollo del negocio. Pasion por la marca. Democratizar el
+                        deporte.
+                        Primeros pasos como responsable de equipo. MultiSkilling</div>
+                </div>
+                <div class="experienceDiv experienceDiv_left">
+                    <div class="experienceDate">2011-2013</div>
+                    <div class="experienceCompany">DECATHLON ESPAÑA</div>
+                    <div class="experiencePosition">Supply Chain specialist</div>
+                    <div class="experienceDescription">Estrategias de crecimiento. Mejora de los tiempos. Optimización
+                        de procesos.
+                        Establecimiento de estrategias de planes B&C.
+                    </div>
+                </div>
+                <div class="lineaGrid"></div>
+                <div class="empty"> <img src="/images/Decathlon.png" height="280px" alt="logo de Decathlon"></div>
+                <div class="empty"> <img src="/images/Decathlon.png" height="280px" alt="logo de Decathlon"></div>
+                <div class="lineaGrid"></div>
+                <div class="experienceDiv">
+                    <div class="experienceDate">dic 2008 - mar2011</div>
+                    <div class="experienceCompany">DECATHLON ESPAÑA</div>
+                    <div class="experiencePosition">Sport Section Seller</div>
+                    <div class="experienceDescription">Pasión por el deporte. Pasión por la marca. Desarrollo de visión
+                        de negocio. Mejora de habilidades.</div>
+                </div>
+
+
+            </div>
+
+            <section class="prueba"> </section>
+        </div>
+        <img src="/images/waves/downwave.svg" alt="imagen de curva estetica" class="downwaveExperience">
+    </section>
+
+    <div class="marco">
+
+        <section class="contact" id="contact">
+            <h2 class="contactTitle">CONTACTO</h2>
+            <div class="contact-details">
+                <div class="contact-details-group">
+                    <p class="contact-label">Dirección</p>
+                    <p class="contact-text">Madrid, España</p>
+                </div>
+                <div class="contact-details-group">
+                    <p class="contact-label">Email</p>
+                    <p class="contact-text">laforjastore@gmail.com</p>
+                </div>
+                <div class="contact-details-group">
+                    <p class="contact-text">Deje su mensaje y le atenderé encantado.</p>
+                </div>
+
+            </div>
+            <form action="" class="contact-form">
+                <div class="contact-form-group">
+                    <label for="name">Nombre</label>
+                    <input required type="text" name="name" id="name" />
+                </div>
+                <div class="contact-form-group">
+                    <label for="email">Email</label>
+                    <input required type="email" name="email" id="email" />
+                </div>
+                <div class="contact-form-group">
+                    <label for="mensaje">Mensaje</label>
+                    <textarea required name="mensaje" rows="10" id="mensaje"></textarea>
+                </div>
+                <button type="submit" class="contact-form-submit">Enviar</button>
+            </form>
+            <nav class="social">
+                <ul class="social-list">
+                    <li class="social-item"><a class="social-link" href="https://github.com/" target="_blank"><img
+                                src="/images/Icon/github.svg" alt="Ir a Github"></a></li>
+                    <li class="social-item"><a class="social-link"
+                            href="https://www.linkedin.com/in/javier-cecilia-ruiz-de-mart%C3%ADn-esteban-649a45138/"
+                            target="_blank"><img src="/images/Icon/linkedin.svg" alt="Ir a LinkedIn"></a></li>
+                    <li class="social-item"><a class="social-link" href="" target="_blank"><img
+                                src="/images/Icon/bookmark-heart.svg" alt="guarda mi página"></a></li>
+
+                </ul>
+            </nav>
+
+        </section>
+    </div>
+
+    <footer class="footer">
+        <a href="">Copyright © 2024</a>
+        <a href="https://www.linkedin.com/in/javier-cecilia-ruiz-de-mart%C3%ADn-esteban-649a45138/" target="_blank"
+            alt="Enlace para ver mi LinkedIn">LinkedIn</a>
+    </footer>
+</body>
+
+</html>

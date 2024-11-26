@@ -1,0 +1,54 @@
+.skills {
+    padding: 0 35px;
+}
+
+.skills-title {
+    font-size: 35px;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 80px;
+}
+
+.skills-list {
+    padding: 30px 0 50px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.skills-skill {
+    font-size: 15px;
+    font-weight: 500;
+    box-shadow: 0px 3px 3px var(--themeColor);
+    padding: 1em 2em;
+    border-radius: 5px;
+    margin: 10px;
+    background-color: var(--textColorInvert);
+}
+
+.softSkillOne {
+    background-color: var(--themeColor);
+    color: var(--textColorInvert);
+}
+
+.softSkill {
+    background-color: var(--themeColorSoft);
+
+}
+
+@media (min-width:768px) {
+
+    .skills {
+        max-width: 1024px;
+        margin: 0 auto;
+    }
+
+    .skills-title {
+        font-size: 35px;
+    }
+
+    .skills-skill {
+        font-size: 20px;
+    }
+
+}

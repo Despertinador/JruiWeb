@@ -1,0 +1,128 @@
+.experiences {
+    display: flex;
+    flex-direction: column;
+    margin: 50px 0 0 0;
+}
+
+
+.mapExperiences {
+    background-color: var(--themeColor);
+    color: var(--textColorInvert);
+    padding: 80px 25px 150px 25px;
+}
+
+
+
+.experiencesTitle {
+    font-size: 35px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.experienceDiv {
+    padding: 25px;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.experienceDate {
+    font-size: 23px;
+    font-weight: 500;
+    color: var(--goldColor);
+}
+
+.experienceCompany {
+    padding: 0 0 15px 0;
+    font-size: 27px;
+    font-weight: 500;
+}
+
+.experiencePosition {
+    padding: 0 0 15px 0;
+    font-size: 23px;
+    font-weight: 400;
+}
+
+.empty {
+    display: none;
+}
+
+@media (min-width:768px) {
+
+    .experiencesGrid {
+        display: grid;
+        grid-template-columns: auto 2px auto;
+        gap: 20px 0;
+        justify-content: center;
+        max-width: 1024px;
+        margin: 0 auto;
+        padding: 0 10px;
+    }
+
+    .empty {
+        display: block;
+        display: flex;
+        justify-content: center;
+    }
+
+
+    .experiencesTitle {
+        font-size: 35px;
+        font-weight: bold;
+        text-align: center;
+        padding-top: 120px;
+        padding-bottom: 120px;
+    }
+
+    .experienceDiv {
+        padding: 25px;
+        max-width: 500px;
+        margin: 0 auto;
+    }
+
+    .experienceDiv_left {
+        text-align: right;
+    }
+
+    .experienceDate {
+        font-size: 23px;
+        font-weight: 500;
+        color: var(--goldColor);
+    }
+
+    .experienceCompany {
+        padding: 0 0 15px 0;
+        font-size: 27px;
+        font-weight: 500;
+    }
+
+    .experiencePosition {
+        padding: 0 0 5px 0;
+        font-size: 23px;
+        font-weight: 400;
+    }
+
+    .lineaGrid {
+        background-color: var(--textColorInvert);
+        position: relative;
+    }
+
+    .lineaGrid::before,
+    .lineaGrid::after {
+        content: "";
+        display: block;
+        width: 20px;
+        height: 20px;
+        background-color: var(--textColorInvert);
+        border-radius: 50%;
+        position: absolute;
+        top: -20px;
+        left: -9px;
+
+    }
+
+    .lineaGrid::after {
+        top: 100%;
+        z-index: 1;
+    }
+}

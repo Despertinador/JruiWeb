@@ -1,0 +1,141 @@
+.topheader {
+    background-color: var(--themeColor);
+    box-shadow: 0px 7px 7px var(--themeColorSoft);
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+    left: 0;
+    top: 0;
+}
+
+.topnav {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+.topnav a {
+    color: var(--textColorInvert);
+
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    gap: 10px;
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.logo:hover{
+    color: var(--goldColor); 
+}
+
+.menu {
+    display: flex;
+}
+
+.menu li {
+    padding: 0 15px;
+}
+
+.menu a {
+    font-weight: 500;
+    font-size: 20px;
+    color: var(--textColorInvert);
+    line-height: 100px;
+    position: relative;
+}
+
+.menu a:hover{
+    color: var(--goldColor); 
+}
+
+.menu a::after {
+    content: "";
+    background-color: var(--goldColor);
+    box-shadow: 0px 5px 5px var(--goldColor);
+    position: absolute;
+    left: 0;
+    top: calc(100% + 4px);
+    width: 100%;
+    height: 2px;
+    opacity: 0;
+    transition: opacity .5s;
+}
+
+.menu a.selected::after,
+.menu a:hover::after {
+    opacity: 1;
+} 
+
+.open-menu,
+.close-menu {
+    display: none;
+}
+
+@media (max-width: 768px) {
+
+
+    .menu {
+        padding: 0;
+        margin: 0;
+        flex-direction: column;
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow-y: auto;
+        align-items: center;
+        background-color: var(--themeColor);
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity .5s;
+    }
+
+    .menu li {
+        padding: 0 0;
+    }
+
+    .menu a {
+        line-height: 75px;
+    }
+
+
+    .close-menu {
+        display: block;
+        background: none;
+        border: none;
+        align-self: flex-end;
+        padding: 42px;
+        cursor: pointer;
+
+    }
+
+    .open-menu {
+        display: block;
+        background: none;
+        border: none;
+        align-self: center;
+        padding: 45px;
+        scale: 1.5;
+    }
+
+    .menu_opened {
+        opacity: 1;
+        pointer-events: all;
+    }
+
+    .menu a:hover, .menu a.selected{
+        color: var(--goldColor); 
+    }
+    
+    .menu a::after {
+        content: none;
+    }
+    
+
+}

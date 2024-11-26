@@ -1,0 +1,157 @@
+.marco {
+    padding: 100px 25px;
+}
+
+.contact {
+    color: var(--textColorInvert);
+    background-color: var(--themeColor);
+    border-radius: 10px;
+    padding: 50px 25px;
+    display: grid;
+    gap: 25px;
+}
+
+.contact p,
+.contact ul,
+.contact h2 {
+    margin: 0;
+    padding: 0;
+}
+
+.contactTitle {
+    font-size: 35px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.contact-details,
+.contact-form {
+    display: grid;
+    gap: 25px;
+}
+
+.contact-details-group,
+.contact-form-group {
+    display: grid;
+    gap: 3px;
+}
+
+.contact-label {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.contact-form input,
+.contact-form textarea {
+    border-radius: 5px;
+    border: none;
+    height: 30px;
+    padding: 5px 10px;
+}
+
+.contact-form textarea {
+    height: auto;    
+    resize: vertical;
+    overflow-y: hidden;
+}
+
+.contact-form-submit {
+    width: 100%;
+    height: 50px;
+    background-color: var(--themeColorShadow);
+    border: 1px solid var(--themeColorSoft);
+    border-radius: 5px;
+    color: var(--textColorInvert);
+    cursor: pointer;
+}
+
+.contact-form-submit:hover {
+    box-shadow: 0 0px 5px var(--themeColorSoft);
+}
+
+.social-list {
+    display: flex;
+    justify-content: center;
+    gap: 25px
+}
+
+.social-item {
+    background-color: var(--themeColorSoft);
+    padding: 10px 10px 5px 10px;
+    border-radius: 5px;
+}
+
+.social-item:hover {
+    box-shadow: 0 0px 5px var(--themeColorSoft);
+}
+
+.social-item img {
+    height: 30px;
+}
+
+@media (min-width:900px) {
+
+    .marco {
+        padding: 120px 75px;
+    }
+
+    .contact {
+        font-size: 20px;
+        padding: 100px;
+        max-width: 1024px;
+        margin: 0 auto;
+        box-sizing: border-box;
+    }
+
+    .contactTitle {
+        text-align: left;
+    }
+
+    .contact-label {
+        font-size: 25px;
+        font-weight: 600;
+    }
+
+
+    .social-list {
+        display: flex;
+        justify-content: flex-start;
+        gap: 25px
+    }
+
+    .social-item {
+        background-color: var(--themeColorSoft);
+        padding: 10px 10px 5px 10px;
+        border-radius: 5px;
+    }
+
+    .social-item:hover {
+        box-shadow: 0 0px 5px var(--themeColorSoft);
+    }
+
+    .social-item img {
+        height: 40px;
+    }
+
+    .contact-title{
+        grid-area: title;
+    }
+    .contact-details{
+        grid-area: details;
+    }
+    .contact-form{
+        grid-area: form;
+    }
+    .social {
+        grid-area: social;
+    }
+
+    .contact {
+        grid:
+        "title   title" auto
+        "details form" 1fr
+        "social  social" auto /
+        1fr 1fr;
+    align-items: start;
+    }
+}
